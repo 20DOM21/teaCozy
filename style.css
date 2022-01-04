@@ -1,0 +1,253 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    border-width: 100%;
+    position: fixed;
+    width: 100%;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+    align-items: center;
+}
+
+nav {
+    text-decoration: underline;
+    color: seashell;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 19rem;
+    margin-right: 10px;
+}
+
+a {
+    font-size: 26px;
+}
+
+#mission {
+    background-image: url("./images/img-mission-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    height: 700px;
+    width: auto;
+    margin: 69px 40px 50px 40px;
+}
+
+#ourMission {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15 px auto;
+    height: 120px;
+    line-height: 1.8;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 27px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+#featured-tea {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center; 
+}
+
+#featured {
+    width: 1000px;
+}
+
+#title {
+    display: block;
+    height: 120px;
+    line-height: 1.8;      
+}
+
+#tea {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    width: 100%;
+}
+
+#tea div {
+    width: 333px;
+    padding: 10px 25px;
+}
+
+#tea div img {
+    height: 200px;
+}
+
+#tea h4 {
+    padding-top: 7px;
+}
+
+#locations {
+    background-image: url(./images/img-locations-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 69px 40px 0 40px;
+}
+
+#loc-title, #loc-title h2, #containers {
+    background-color: transparent;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+#containers {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+#containers div {
+    opacity: 1;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 15px 20px; 
+}
+
+#theTeaCozy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    line-height: 2.6;
+    margin-top: 0;
+}
+
+footer {
+    display: flex;
+    text-align: left;
+    margin: 60px 20px 30px;
+}
+
+@media only screen and (min-width: 769px) and (max-width:1024px) {
+    header {
+        height: 60px;
+    }
+    #ourMission h2 {
+        font-size: 1.4rem;
+    }
+    #ourMission h4 {
+        font-size: 0.8rem;
+    }
+    nav {
+        width: 13rem;
+    }
+    a {
+        font-size: 19px;
+    }
+    header img {
+        width: 130px;
+        height: auto;
+    }
+    #ourMission {
+        height: 100px;
+    }
+    
+    #locations div h3 {
+        font-size: 1.1rem;
+    }
+    #locations div p {
+        font-size: 0.8rem;
+    }
+    #locations {
+        padding-top: 50px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #containers {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    #containers div {
+        width: 250px;
+        height: 250px;
+    }
+    #locations {
+        padding-bottom: 80px;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width:768px) {
+    header {
+        height: 40px;
+    }
+    header img {
+        width: 100px;
+        height: auto;
+    }
+    nav {
+        width: 12rem;
+    }
+    a {
+        font-size: 15px;
+    }
+    #mission {
+        height: 400px;
+    }
+    #ourMission {
+        height: 70px;
+    }
+    #ourMission h2 {
+        font-size: 1rem;
+    }
+    #ourMission h4 {
+        font-size: 0.6rem;
+    }
+    #locations {
+        padding-top: 50px;
+    }
+}
